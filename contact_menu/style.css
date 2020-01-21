@@ -1,0 +1,37 @@
+body{
+    background-color: #444444;
+}
+#contacts{
+    position: absolute;
+    padding: 4px;
+    bottom: 1em;
+    right: 1em; 
+    overflow: hidden;  
+}
+#contacts a{
+    background-color: orange;
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 0.3em;
+    line-height: 3em;
+    box-shadow: 0px 0px 4px red;
+}
+#contacts li{
+    transform: translateY(10em);
+    transition: 0.5s;
+}
+#contacts li:last-child a{
+    margin-bottom: 0;
+    box-sizing: border-box;
+    background-color: #222222;
+    border: 2px solid orange;
+    color: orange;
+}
+#contacts:hover li{
+    transform: translateY(0);
+    
+}
